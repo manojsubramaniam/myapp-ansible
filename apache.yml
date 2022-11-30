@@ -1,9 +1,8 @@
 ---
-- hosts: webservers 
-  become: True
+- hosts: all
+  become: true
+  become_method: sudo
   tasks:
-    - name: Deploy static website
-      copy:
-        src: index.html
-        dest: /var/www/html/
-...
+  - name: Copy Task
+    become: yes
+    command: cp -r /home/ubuntu/testfile /tmp
