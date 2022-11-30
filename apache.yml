@@ -5,4 +5,4 @@
   tasks:
   - name: Copy Task
     become: yes
-    command: cp -r /home/ubuntu/testfile /tmp
+    command: cp -r /home/manoj/Documents/newfile.odt /tmp
